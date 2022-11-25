@@ -86,7 +86,7 @@ public class Tema {
 	private LocalDateTime data;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("desricao")
+	@JsonIgnoreProperties("descricao")
 	private Tema tema;
 
 	public Long getId() {
