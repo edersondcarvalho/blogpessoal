@@ -40,7 +40,7 @@ public class Postagem {
 	
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
-	private Tema tema;
+	private Postagem postagem;
 
 	public Long getId() {
 		return this.id;
@@ -74,12 +74,12 @@ public class Postagem {
 		this.data = data;
 	}
 
-	public Tema getTema() {
-		return tema;
+	public Postagem getPostagem() {
+		return postagem;
 	}
 
-	public void setTema(Tema tema) {
-		this.tema = tema;
+	public void setPostagem(Postagem postagem) {
+		this.postagem = postagem;
 	}
 
 }
