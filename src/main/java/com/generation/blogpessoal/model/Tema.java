@@ -56,7 +56,6 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
 import org.hibernate.annotations.UpdateTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -86,7 +85,7 @@ public class Tema {
 	private LocalDateTime data;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("descricao")
+	@JsonIgnoreProperties("tema")
 	private Tema tema;
 
 	public Long getId() {
